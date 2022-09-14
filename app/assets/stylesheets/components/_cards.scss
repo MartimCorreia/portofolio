@@ -1,0 +1,50 @@
+.red{
+  width: 225px;
+  height: 254px;
+  background: #F2EFEF;
+  border: 5px solid rgba(255, 69, 76, 0.3);
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  img{
+    margin-top: 5px;
+    width: 35%;
+    height: 20%;
+  }
+}
+.blue{
+  width: 225px;
+  height: 254px;
+  background: #F2EFEF;
+  border: 5px solid rgba(23, 232, 254, 0.3);
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  img{
+    margin-top: 5px;
+    width: 27%;
+    height: 22%;
+  }
+}
+.yellow{
+  width: 225px;
+  height: 254px;
+  background: #F2EFEF;
+  border: 5px solid rgba(255, 183, 0, 0.3);
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  position: absolute;
+  bottom: 31%;
+  right: 9%;
+  img{
+    margin-top: 5px;
+    width: 24%;
+    height: 20%;
+  }
+
+}
+.double{
+  position: relative;
+}
+.yellow:hover{
+  transition: 0.4s;
+  z-index: 2;
+}

@@ -1,0 +1,98 @@
+.red-button{
+ background-image: url("red-button.png");
+ background-size: 331px;
+ background-position: center;
+ height: 179px;
+ width: 302px;
+ margin-left: 191px;
+  a{
+    box-shadow: inset;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 39px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFE3E3;
+
+  }
+}
+.yellow-button{
+  background-image: url("yellow-button.png");
+  background-size: 425px;
+  background-position: center;
+  height: 232px;
+  width: 381px;
+   a{
+
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 29px;
+     line-height: 39px;
+     text-align: center;
+     text-decoration: none;
+     color: #FFE3E3;
+
+   }
+ }
+
+ .blue-button{
+  background-image: url("blue-button.png");
+  background-size: 425px;
+  background-position: center;
+  height: 219px;
+  width: 381px;
+   a{
+
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 29px;
+     line-height: 39px;
+     text-align: center;
+     text-decoration: none;
+     color: #FFE3E3;
+
+   }
+ }
+ .red a{
+  font-weight: bolder;
+  color: #000000;
+  text-decoration: none;
+  background: #D9D9D9;
+  border: 0.3px solid #000000;
+  border-radius: 12px;
+  width: 145px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .blue a{
+  font-weight: bolder;
+  color: #000000;
+  text-decoration: none;
+  background: #D9D9D9;
+  border: 0.3px solid #000000;
+  border-radius: 12px;
+  width: 145px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .yellow a{
+  font-weight: bolder;
+  color: #000000;
+  text-decoration: none;
+  background: #D9D9D9;
+  border: 0.3px solid #000000;
+  border-radius: 12px;
+  width: 145px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
