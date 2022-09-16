@@ -34,11 +34,23 @@
       </div>
 
     </div>
-    <div class="right d-flex flex-column justify-content-end mb-5">
-      <div class="container yellow d-flex flex-column justify-content-around align-items-center">
-      <%= image_tag "JS.png" %>
-      <h3> <strong>JavaScript</strong></h3>
-      <a href="#">Learn More</a>
+    <div class="right d-flex flex-column justify-content-end align-items-center mb-5">
+      <div class="yellow d-flex flex-column justify-content-around align-items-center" data-controller="hello">
+        <div class="card__inner" data-action="click->hello#disable" data-hello-target="flip">
+          <div class="card__face card__face--front">
+            <%= image_tag "JS.png" %>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card__content">
+              <div class="card__header">
+                <h3> <strong>JavaScript</strong></h3>
+              </div>
+              <div class="card__btn">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="d-flex double">
         <div class="container red me-5 d-flex flex-column justify-content-around align-items-center">
