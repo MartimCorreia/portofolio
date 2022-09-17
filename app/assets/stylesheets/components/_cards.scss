@@ -1,8 +1,8 @@
 .red{
   width: 225px;
   height: 254px;
-  background: #F2EFEF;
-  border: 5px solid rgba(255, 69, 76, 0.3);
+
+
   box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   img{
@@ -14,8 +14,6 @@
 .blue{
   width: 225px;
   height: 254px;
-  background: #F2EFEF;
-  border: 5px solid rgba(23, 232, 254, 0.3);
   box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   img{
@@ -27,10 +25,9 @@
 .yellow{
   width: 225px;
   height: 254px;
-  background: #F2EFEF;
-  border: 5px solid rgba(255, 183, 0, 0.3);
   box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  perspective: 1000px;
 
   img{
     margin-top: 5px;
@@ -66,6 +63,7 @@
   overflow: hidden;
 }
 .card__face--front{
+  border: 5px solid rgba(255, 183, 0, 0.3);
   background: #F2EFEF;
   box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -74,6 +72,8 @@
   border-radius: 12px;
 }
 .card__face--back{
+  border-radius: 12px;
+  border: 5px solid rgba(255, 183, 0, 0.3);
   background: #F2EFEF;
   box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
   transform: rotateY(180deg);
@@ -91,6 +91,127 @@
   padding: 30px 30px 40px;
 }
 .card__header:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  border-radius: 12px;
+}
+.card__inner__blue{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+}
+.card__inner__blue.is-flipped{
+  transform: rotateY(180deg);
+}
+.card__face__blue{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.card__face__blue--front{
+  border: 5px solid rgba(23, 232, 254, 0.3);
+  background: #F2EFEF;
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.card__face__blue--back{
+  border-radius: 12px;
+  border: 5px solid rgba(23, 232, 254, 0.3);
+  background: #F2EFEF;
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  transform: rotateY(180deg);
+}
+.card__content__blue{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card__header_blue {
+  position:relative;
+  padding: 30px 30px 40px;
+}
+.card__header__blue:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  border-radius: 12px;
+}
+
+
+
+.card__inner__red{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+}
+.card__inner__red.is-flipped{
+  transform: rotateY(180deg);
+}
+.card__face__red{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.card__face__red--front{
+  border: 5px solid rgba(255, 69, 76, 0.3);
+  background: #F2EFEF;
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.card__face__red--back{
+  border-radius: 12px;
+  border: 5px solid rgba(255, 69, 76, 0.3);
+  background: #F2EFEF;
+  box-shadow: inset 0px 4px 72px 16px rgba(0, 0, 0, 0.25);
+  transform: rotateY(180deg);
+}
+.card__content__red{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card__header__red{
+  position:relative;
+  padding: 30px 30px 40px;
+}
+.card__header__red:after{
   content: '';
   display: block;
   position: absolute;

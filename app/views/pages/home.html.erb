@@ -3,7 +3,8 @@
     <div class="left d-flex flex-column justify-content-start">
       <div class="first">
         <h1>Hi I'm Martim</h1>
-        <p>Lorem Ipsilum text so i can actually see <br> how a 3 lines text in my page really it looks like.</p>
+        <p>Full-Stack | Ruby on Rails |</p>
+        <p class="ms-2">Thank you for stopping by! <br> Ready to work with you and learn more and more each day.</p>
         <div class="d-flex justify-content-end">
           <div class="red-button d-flex justify-content-center align-items-center">
             <a href="#">Hire me</a>
@@ -11,8 +12,8 @@
         </div>
       </div>
       <div class="second">
-        <h1>Hi I'm Martim</h1>
-        <p>Lorem Ipsilum text so i can actually see <br> how a 3 lines text in my page <br> really it looks like.</p>
+        <h1>My work</h1>
+        <p class="ms-2 mt-3">Go ahead and check all I've done so far on my CV. <br> PS: Currently working on all my projects for hiring reasons!</p>
         <div class="d-flex justify-content-end">
           <div class="yellow-button d-flex justify-content-center align-items-center">
             <a href="#">Download my CV</a>
@@ -29,14 +30,14 @@
       <div class="d-flex flex-column justify-content-center align-items-center">
         <%= image_tag "Octocat.png", class:"octo" %>
         <div class="blue-button d-flex justify-content-center align-items-center">
-            <a href="#">My GitHub!</a>
+            <a href="https://github.com/MartimCorreia">My GitHub!</a>
         </div>
       </div>
 
     </div>
-    <div class="right d-flex flex-column justify-content-end align-items-center mb-5">
-      <div class="yellow d-flex flex-column justify-content-around align-items-center" data-controller="hello">
-        <div class="card__inner" data-action="click->hello#disable" data-hello-target="flip">
+    <div class="right d-flex flex-column justify-content-end align-items-center mb-5" data-controller="hello">
+      <div class="yellow d-flex flex-column justify-content-around align-items-center">
+        <div class="card__inner" data-action="click->hello#yellowflip" data-hello-target="flip">
           <div class="card__face card__face--front">
             <%= image_tag "JS.png" %>
           </div>
@@ -53,15 +54,39 @@
         </div>
       </div>
       <div class="d-flex double">
-        <div class="container red me-5 d-flex flex-column justify-content-around align-items-center">
-          <%= image_tag "rails.png" %>
-          <h3><strong>Ruby on Rails</strong></h3>
-          <a href="#">Learn More</a>
+        <div class="red me-5 d-flex flex-column justify-content-around align-items-center">
+          <div class="card__inner__red" data-action="click->hello#redflip" data-hello-target="red">
+            <div class="card__face__red card__face__red--front">
+              <%= image_tag "rails.png" %>
+            </div>
+            <div class="card__face__red card__face__red--back">
+              <div class="card__content__red">
+                <div class="card__header__red">
+                  <h3><strong>Ruby on Rails</strong></h3>
+                </div>
+                <div class="card__btn__red">
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container blue ms-4 d-flex flex-column justify-content-around align-items-center">
-          <%= image_tag "html.png" %>
-          <h3><strong>HTML</strong></h3>
-          <a href="#">Learn More</a>
+        <div class="blue ms-4 d-flex flex-column justify-content-around align-items-center">
+          <div class="card__inner__blue" data-action="click->hello#blueflip" data-hello-target="blue">
+            <div class="card__face__blue card__face__blue--front">
+              <%= image_tag "html.png" %>
+            </div>
+            <div class="card__face__blue card__face__blue--back">
+              <div class="card__content__blue">
+                <div class="card__header__blue">
+                  <h3><strong>HTML</strong></h3>
+                </div>
+                <div class="card__btn__blue">
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
