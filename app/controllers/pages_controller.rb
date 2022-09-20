@@ -3,4 +3,11 @@ class PagesController < ApplicationController
   end
   def about
   end
+  def personal
+  end
+  def services
+  end
+  def contact
+  end
+
 end
