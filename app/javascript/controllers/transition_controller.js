@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["test"]
   connect() {
-    console.log("Hello buddy")
+    
 
 
     window.onload = () => {

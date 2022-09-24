@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import TransitionController from "./transition_controller"
 application.register("transition", TransitionController)
+
+import TitleController from "./title_controller"
+application.register("title", TitleController)
