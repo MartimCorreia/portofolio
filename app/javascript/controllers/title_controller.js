@@ -9,6 +9,9 @@ export default class extends Controller {
       img[0].className = "showingup";
       this.bganimateTarget.className = "about-frame-in d-flex justify-content-start"
     });
+    window.addEventListener('loadend', () =>{
+      
+    });
 
   }
 }
