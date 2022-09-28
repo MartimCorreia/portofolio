@@ -12,3 +12,6 @@ application.register("transition", TransitionController)
 
 import TitleController from "./title_controller"
 application.register("title", TitleController)
+
+import SlideController from "./slide_controller"
+application.register("slide", SlideController)

@@ -1,13 +1,21 @@
 <div class="transition transition-2 is-active" data-controller="transition" data-transition-target="test"></div>
 
+
 <div class="container-contact">
 
-
-  <div class="scrollable d-flex flex-column align-items-center">
-
-    <%= image_tag "mail.png", style: 'height: 200px; width:200px;' %>
-
-    <%= image_tag "LinkDn-White.png", style: 'height: 200px; width:200px;' %>
-
+<div class="around" data-controller="slide">
+  <div class="d-flex align-items-center" id="slider">
+    <ul data-slide-target="zone">
+      <li><%= image_tag "mail.png", style: 'height: 200px; width:200px;'%></li>
+      <li><%= image_tag "LinkDn-White.png", style: 'height: 200px; width:200px;'%></li>
+    </ul>
   </div>
 </div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+  integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+  crossorigin="anonymous"></script>

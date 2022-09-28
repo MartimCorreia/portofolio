@@ -1,15 +1,39 @@
-.scrollable {
-  overflow-y: scroll;
+// .scrollable {
+//   overflow-y: scroll;
+//   height: 200px;
+//   border-radius: 12%;
+
+// }
+// .scrollable::-webkit-scrollbar {
+//   display: none; // chrome safari and opera
+// }
+#slider {
+  width: 200px;
   height: 200px;
-  border-radius: 12%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+//   -ms-overflow-style: none;  /* IE and Edge */
+//   scrollbar-width: none;  /* Firefox */
+}
+#slider ul li img {
+	display: block;
+
 
 }
-.scrollable::-webkit-scrollbar {
-  display: none; // chrome safari and opera
+.around{
+  width: 200px;
+  height: 200px;
 }
-.scrollable {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+
+#slider ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
 }
 .container-contact{
   width: 100%;
