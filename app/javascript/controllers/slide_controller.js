@@ -43,15 +43,16 @@ static targets = ["zone"];
       clearInterval(timer);
       // console.log($('#slider ul').css('left'))
       if($('#slider ul').css('left') == "-200px"){
-
+        $('#slider ul').css({cursor: "pointer"});
         $('#slider ul').animate( {left: "-210px"}, 500);
+
         $('#slider ul li img').animate( {width: "210px", height: "210px"}, 500 );
         $('#slider').animate( {width: "210px", height: "210px" }, 500 );
         $('#tab2').fadeIn(500);
 
       }
       else if($('#slider ul').css('left') == "0px" ){
-        console.log('im here')
+        $('#slider ul').css({cursor: "pointer"});
         $('#slider ul li img').animate( {width: "210px", height: "210px"}, 500 );
         $('#slider').animate( {width: "210px", height: "210px" }, 500 );
         $('#tab1').fadeIn(500);
