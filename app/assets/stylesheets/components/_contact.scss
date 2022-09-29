@@ -18,13 +18,34 @@
 }
 #slider ul li img {
 	display: block;
+  width: 200px;
+  height: 200px;
 
 
 }
 .around{
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 400px;
 }
+#tab1, #tab2{
+
+  margin-top: 20px;
+  border-radius: 25px 25px 25px 25px;
+  display: none;
+  padding: 15px;
+  background: #eaeaea;
+}
+a {
+  display: flex;
+  justify-content: center;
+
+  text-decoration: none;
+}
+// #tab1{
+//   display: block;
+//   padding: 15px;
+//   background: #eaeaea;
+// }
 
 #slider ul {
 	list-style-type: none;
